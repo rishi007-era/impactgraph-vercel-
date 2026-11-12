@@ -1,0 +1,138 @@
+{
+  "n_episodes": 36,
+  "n_samples": 207360,
+  "with_residual": {
+    "node_step": {
+      "tp": 21489,
+      "fp": 67,
+      "tn": 179121,
+      "fn": 6683,
+      "precision": 0.996891816663574,
+      "recall": 0.7627786454635809,
+      "f1": 0.864261583011583,
+      "fpr": 0.0003739089671183338,
+      "fnr": 0.23722135453641913,
+      "accuracy": 0.9674479166666666,
+      "samples": 207360
+    },
+    "event_by_type": [
+      {
+        "type": "cyber_activity",
+        "events": 102,
+        "detected": 1.0,
+        "median_delay": 1.0
+      },
+      {
+        "type": "physical_failure",
+        "events": 33,
+        "detected": 1.0,
+        "median_delay": 1.0
+      },
+      {
+        "type": "ransomware",
+        "events": 31,
+        "detected": 1.0,
+        "median_delay": 0.0
+      }
+    ],
+    "physical_by_node_type": [
+      {
+        "node_type": "block_valve",
+        "events": 8,
+        "detected": 1.0,
+        "median_delay": 1.0
+      },
+      {
+        "node_type": "pipeline_segment",
+        "events": 12,
+        "detected": 1.0,
+        "median_delay": 1.0
+      },
+      {
+        "node_type": "pump_station",
+        "events": 9,
+        "detected": 1.0,
+        "median_delay": 1.0
+      },
+      {
+        "node_type": "storage_tank",
+        "events": 4,
+        "detected": 1.0,
+        "median_delay": 3.0
+      }
+    ],
+    "label_recall": {
+      "cyber_activity": 0.9682440846824408,
+      "downstream_effect": 0.5885534591194969,
+      "physical_failure": 0.9923529411764705,
+      "ransomware": 1.0
+    }
+  },
+  "without_residual": {
+    "node_step": {
+      "tp": 25550,
+      "fp": 67,
+      "tn": 179121,
+      "fn": 2622,
+      "precision": 0.9973845493227154,
+      "recall": 0.9069288655402528,
+      "f1": 0.9500083660227927,
+      "fpr": 0.0003739089671183338,
+      "fnr": 0.09307113445974727,
+      "accuracy": 0.9870322145061728,
+      "samples": 207360
+    },
+    "event_by_type": [
+      {
+        "type": "cyber_activity",
+        "events": 102,
+        "detected": 1.0,
+        "median_delay": 1.0
+      },
+      {
+        "type": "physical_failure",
+        "events": 33,
+        "detected": 1.0,
+        "median_delay": 1.0
+      },
+      {
+        "type": "ransomware",
+        "events": 31,
+        "detected": 1.0,
+        "median_delay": 0.0
+      }
+    ],
+    "physical_by_node_type": [
+      {
+        "node_type": "block_valve",
+        "events": 8,
+        "detected": 1.0,
+        "median_delay": 1.0
+      },
+      {
+        "node_type": "pipeline_segment",
+        "events": 12,
+        "detected": 1.0,
+        "median_delay": 1.0
+      },
+      {
+        "node_type": "pump_station",
+        "events": 9,
+        "detected": 1.0,
+        "median_delay": 1.0
+      },
+      {
+        "node_type": "storage_tank",
+        "events": 4,
+        "detected": 1.0,
+        "median_delay": 3.0
+      }
+    ],
+    "label_recall": {
+      "cyber_activity": 0.9682440846824408,
+      "downstream_effect": 0.8439622641509434,
+      "physical_failure": 0.9923529411764705,
+      "ransomware": 1.0
+    }
+  }
+}
